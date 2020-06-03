@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression">
+  <test thread-count="10" parallel="methods" name="Back-End Weather London Test">
+  	<parameter name="location" value="London,uk"/>
+  	<parameter name="tempLow" value="288.0"/>
+  	<parameter name="tempHigh" value="289.0"/>
+    <classes>
+       <class name="api.tests.WeatherTest"/>
+    </classes>
+     
+  </test> <!-- Test -->
+  <test thread-count="10" parallel="methods" name="Back-End Weather Sao Paulo Tests">
+  	<parameter name="location" value="Sao Paulo,Br"/>
+  	<parameter name="tempLow" value="291.0"/>
+  	<parameter name="tempHigh" value="292.0"/>
+    <classes>
+       <class name="api.tests.WeatherTest"/>
+    </classes>
+     
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

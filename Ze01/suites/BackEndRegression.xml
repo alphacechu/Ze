@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression">
+  <test thread-count="10" parallel="methods" name="Back-End Regression Tests">
+   	<groups>
+	    <run>
+	      <exclude name="ui"  />
+	      <include name="regression"  />
+	    </run>
+  	</groups>
+    <packages>
+	  	<package name = "tests.*"/>
+	</packages>
+
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Back-End Weather Tests(failed)">
+    <parameter name="tempLow" value="279.81"/>
+    <parameter name="location" value="London,uk"/>
+    <parameter name="tempHigh" value="299.81"/>
+    <classes>
+      <class name="api.tests.WeatherTest">
+        <methods>
+          <include name="weatherRange" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- api.tests.WeatherTest -->
+    </classes>
+  </test> <!-- Back-End Weather Tests(failed) -->
+</suite> <!-- Failed suite [Regression] -->
